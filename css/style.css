@@ -1,10 +1,10 @@
 :root {
-  --League-gold: #d4af37; /* Brighter gold for readability */
-  --League-D-Blue: #1e1f2b; /* Darker, deeper blue for contrast */
-  --League-L-Blue: #2e3a59; /* Muted navy blue for background */
-  --League-highlight: #3c8dbc; /* Accent blue for interactivity */
-  --League-bg-gray: #1a1a1a; /* Soft black background element */
-  --League-white: #f5f5f5; /* Light text on dark bg */
+  --League-gold: #d4af37;
+  --League-D-Blue: #1e1f2b;
+  --League-L-Blue: #2e3a59;
+  --League-highlight: #3c8dbc;
+  --League-bg-gray: #1a1a1a;
+  --League-white: #f5f5f5;
 }
 
 * {
