@@ -1,47 +1,72 @@
 :root {
-    --League-gold: #C79B3B;
-    --League-D-Blue: #2c2f3e;
-    --League-L-Blue : #96a0b5;
+  --League-gold: #d4af37; /* Brighter gold for readability */
+  --League-D-Blue: #1e1f2b; /* Darker, deeper blue for contrast */
+  --League-L-Blue: #2e3a59; /* Muted navy blue for background */
+  --League-highlight: #3c8dbc; /* Accent blue for interactivity */
+  --League-bg-gray: #1a1a1a; /* Soft black background element */
+  --League-white: #f5f5f5; /* Light text on dark bg */
 }
+
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-color: var(--League-gold);
-}
-
-h2 {
-    text-shadow: -3px 1px 2px #000;
-    margin: 10px 0;
-    text-transform: uppercase;
-}
-p {
-    font-size: 16px;
-}
-header {
-
-background-color: var(--League-D-Blue);
-width: 100%;
-height: 57px;
-padding: 12px 7px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--League-gold);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-background-color: var(--League-L-Blue);
+  background-color: var(--League-L-Blue);
 }
+
+header {
+  background-color: var(--League-D-Blue);
+  width: 100%;
+  height: 57px;
+  padding: 12px 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  text-shadow: -3px 1px 2px #000;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: var(--League-gold);
+}
+
+p {
+  font-size: 16px;
+  color: var(--League-white);
+}
+
 main {
-    text-align: center;
-    font-size: 35px;
+  text-align: center;
+  font-size: 28px;
+  color: var(--League-gold);
+  padding: 20px;
 }
+
 #champ-cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 12px;
+  padding: 20px;
 }
-#champ-cont > div{
-    width: 200px;
-    text-align: center;
-    color: var(--League-gold);
-    background-color: var(--League-D-Blue);
+
+#champ-cont > div {
+  width: 200px;
+  background-color: var(--League-D-Blue);
+  color: var(--League-gold);
+  border: 2px solid var(--League-highlight);
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#champ-cont > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
