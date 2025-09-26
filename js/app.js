@@ -48,7 +48,6 @@ async function builder() {
 }
 
 builder()
-<<<<<<< HEAD
 
 const cardBG = document.querySelector("#overhead-tranp")
 const cardFull = document.querySelector("#card")
@@ -63,5 +62,3 @@ async function champShowcase(champ) {
     cardFull.appendChild(img)
 
 }
-=======
->>>>>>> 27c6d979f5f8a2cea58cc505babfdaaf3154c960
