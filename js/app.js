@@ -22,7 +22,7 @@ async function builder() {
         const nameOfChamp = document.createElement("h3")
         const nameTxt = document.createTextNode(champions[champ].name)
         const imgOfChamp = document.createElement("img")
-        imgOfChamp.src = `/img/champion/${champions[champ].image.full}`
+        imgOfChamp.src = `./img/champion/${champions[champ].image.full}`
         const blurbTxt = document.createElement("p")
         const blurbInfo = document.createTextNode(champions[champ].blurb)
         const a = document.createElement("a")
@@ -48,6 +48,7 @@ async function builder() {
 }
 
 builder()
+<<<<<<< HEAD
 
 const cardBG = document.querySelector("#overhead-tranp")
 const cardFull = document.querySelector("#card")
@@ -62,3 +63,5 @@ async function champShowcase(champ) {
     cardFull.appendChild(img)
 
 }
+=======
+>>>>>>> 27c6d979f5f8a2cea58cc505babfdaaf3154c960
